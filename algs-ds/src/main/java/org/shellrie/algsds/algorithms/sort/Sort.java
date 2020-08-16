@@ -5,7 +5,7 @@ public abstract class Sort<T> {
 	
 	protected void swap(Comparable<T>[] items, int i, int j) {
 		assert items != null;
-		assert i >= 0 || i <= items.length + 1 || j >= 0 || j <= items.length + 1;
+		assert i >= 0 || i < items.length || j >= 0 || j < items.length;
 		
 		if(i == j) {
 			return;
