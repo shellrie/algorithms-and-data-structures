@@ -2,10 +2,11 @@ package org.shellrie.algsds.algorithms.sort;
 
 import org.junit.Before;
 
-public class BubbleSortTest extends CommonSortTest {
-	
+public class SelectionSortTest extends CommonSortTest {
+
 	@Before
 	public void setup() {
-		objectUnderTest = new BubbleSort<Integer>();
+		objectUnderTest = new SelectionSort<Integer>();
 	}
+
 }
